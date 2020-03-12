@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+class father{
+public:
+    int height;
+    void introduce()
+    {
+        cout<<"father"<<endl;
+
+    }
+};
+
+
+class child : public father {
+public:
+    void introduce(int h){
+
+ cout<<h<<endl;}
+
+};
+
+int main()
+{
+    child anil;
+    anil.introduce(6);
+    anil.father::introduce();
+    return 0;
+
+
+}
